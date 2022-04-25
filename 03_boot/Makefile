@@ -1,0 +1,7 @@
+boot.bin: boot.asm
+	nasm boot.asm -o boot.bin
+run: boot.bin
+	qemu-system-x86_64 -boot order=a -fda boot.bin
+
+clean:
+	rm  boot.bin *.img *.o
