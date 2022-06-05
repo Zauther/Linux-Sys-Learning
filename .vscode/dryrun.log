@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/zauther/文档/Linux-Sys-Learning'
+make: Leaving directory '/home/zauther/文档/Linux-Sys-Learning'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

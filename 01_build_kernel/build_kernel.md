@@ -4,9 +4,9 @@
 
 ```shell
 sudo apt-get update
-sudo apt-get install bison
-sudo apt-get install flex
-sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc
+sudo apt-get install -y bison
+sudo apt-get install -y flex dwarves
+sudo apt-get install -y git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc libelf-dev
 ```
 下载内核
 
