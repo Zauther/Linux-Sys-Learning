@@ -42,12 +42,20 @@ qemu-system-x86_64   \
 
 ##### qemu编译安装
 
-从https://www.qemu.org/ 下载源码
+从 https://www.qemu.org/ 下载源码
+https://download.qemu.org/qemu-8.2.2.tar.xz
 
 安装依赖
 
 ```shell
-sudo apt-get install zlib1g-dev libglib2.0-dev libtool autoconf
+sudo apt-get install zlib1g-dev libglib2.0-dev libtool autoconf python3-venv
+```
+
+解压
+```
+xz -d qemu-8.2.2.tar.xz
+tar xvf qemu-8.2.2.tar
+cd qemu-8.2.2
 ```
 
 配置
@@ -64,6 +72,12 @@ sudo apt-get install zlib1g-dev libglib2.0-dev libtool autoconf
 make
 ```
 
+
+ubuntu 直接安装
+
+```shell
+sudo apt install qemu-system-x86 ovmf
+```
 
 
 ##### RUST
